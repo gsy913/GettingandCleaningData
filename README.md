@@ -4,6 +4,14 @@
 Load library "dplyr" in order to use functions from the package "dplyr".
 
 ## Load raw data, edit column names and merge data sets
+- Unpack the origial data folder, please include the following datasets in the working directory:
+1)subject_test.txt
+2)subject_train.txt--for subject_id information
+3)X_test.txt
+4)X_train.txt --for feature measurements
+5)Y_test.txt
+6)Y_train.txt --for activity type information
+7)features.txt --for feature names
 - I used read.table() to read in the .txt files from the working directory;
 - For subject and activity label information, I used col.names argument to set column names in the corresponding data frames;
 - For feature information, since there are 561 feature names, I first loaded the name list from feature.txt using read.table() and save it into a data frame called feature_names, note that the second column of this data frame is the actual name info; 
