@@ -42,6 +42,6 @@ vars<-names(factor_data[,4:69])
 data2<-summarise_at(factor_data,vars,mean)
 
 #write out the final tidy datasets
-write.table(data1,file="step4_dataset.txt")
-write.table(data2,file="step5_dataset.txt")
+write.table(data1,file="step4_dataset.txt",row.names= FALSE)
+write.table(data2,file="step5_dataset.txt",row.names = FALSE)
 
